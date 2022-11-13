@@ -9,4 +9,4 @@ widgetEl.addEventListener('click', () => {
   const bgdColor = getRandomHexColor ()
   document.body.style.backgroundColor = bgdColor;
 spanrEl.textContent = bgdColor;
-})
+});
