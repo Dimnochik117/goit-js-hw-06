@@ -7,10 +7,12 @@ const ingredients = [
   'Condiments',
 ];
 
-const ulRef = document.querySelector('#ingredients');
-const ingredientRef = ingredients.map((ingredient) => {
-  const liElem = document.createElement('li');
-  liElem.textContent = ingredient;
-  liElem.classList.add('item');
-  ulRef.appendChild(liElem);
+const ingredientsRef = document.querySelector('#ingredients');
+
+const itemsCreate = ingredients.map(ingredients => {
+  const itemRef = document.createElement('li');
+  itemRef.textContent = ingredients;
+  return itemRef;
 });
+
+ingredientsRef.append(...itemsCreate);
